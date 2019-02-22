@@ -1,6 +1,6 @@
 class World{
-  Ball ball = new Ball(600, 400);
-  Bat bat = new Bat(600, 750);
+  Ball ball = new Ball(WWIDTH/2, WHEIGHT/2);
+  Bat bat = new Bat(WWIDTH/2, WHEIGHT*.9);
   Bricks bricks = new Bricks();
   
   void init(){    
@@ -15,13 +15,9 @@ class World{
     if (keyPressed){
       if (key == 'a' || key == 'A'){
         bat.move(-1);
-        fill(0);
-        text("left", 100, width/2);
       }
       if (key == 'd' || key == 'D'){
         bat.move(1);
-        fill(0);
-        text("right", 100, width/2);
       }
     }
   }

@@ -1,10 +1,10 @@
 //Git folder version.
 World world = new World();
-int wWidth = 1200;
-int wHeight = 800;
+final int WWIDTH = 1200;
+final int WHEIGHT = 800;
 
 void settings(){
- size(wWidth, wHeight, P2D); 
+ size(WWIDTH, WHEIGHT, P2D); 
 }
 
 void setup(){
