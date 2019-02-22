@@ -9,10 +9,10 @@ class Ball{
 public Ball(int x, int y){
  this.ballX = x;
  this.ballY = y;
- this.ballSpeed = 4;
+ this.ballSpeed = 6;
  this.ballSize = 10;
- this.ballVelX = 1;
- this.ballVelY = 1;
+ this.ballDirX = 1;
+ this.ballDirY = 1;
 }
   
 void update(){ 
@@ -22,7 +22,7 @@ void update(){
 void draw(){
   fill(0);
   ellipse(ballX, ballY, ballSize, ballSize);
-  if (ballAtRightEdge()){ this.ballX = 1200;this.ballDirX *= -1}
+  if (ballAtRightEdge()){this.ballX = 1200;this.ballDirX *= -1;}
   if (ballAtLeftEdge()){this.ballX = 0;this.ballDirX *= -1;}
   if (ballAtBottomEdge()){this.ballY = 800;this.ballDirY *= -1;}
   if (ballAtTopEdge()){this.ballY = 0;this.ballDirY *= -1;}

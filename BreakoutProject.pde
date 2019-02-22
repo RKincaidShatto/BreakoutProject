@@ -3,7 +3,7 @@ World world = new World();
 
 void setup(){
   //initialize world here
-  size(1200, 800);  
+  size(1200, 800, P2D);  
 }
 
 void draw(){
