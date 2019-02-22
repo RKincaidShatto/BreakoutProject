@@ -1,10 +1,14 @@
-//test
+//Git folder version.
 World world = new World();
+int wWidth = 1200;
+int wHeight = 800;
 
+void settings(){
+ size(wWidth, wHeight, P2D); 
+}
 
 void setup(){
   //initialize world here
-  size(1200, 800, P2D);  
 }
 
 void draw(){

@@ -22,19 +22,19 @@ void update(){
 void draw(){
   fill(0);
   ellipse(ballX, ballY, ballSize, ballSize);
-  if (ballAtRightEdge()){this.ballX = 1200;this.ballDirX *= -1;}
+  if (ballAtRightEdge()){this.ballX = wWidth;this.ballDirX *= -1;}
   if (ballAtLeftEdge()){this.ballX = 0;this.ballDirX *= -1;}
-  if (ballAtBottomEdge()){this.ballY = 800;this.ballDirY *= -1;}
+  if (ballAtBottomEdge()){this.ballY = wHeight;this.ballDirY *= -1;}
   if (ballAtTopEdge()){this.ballY = 0;this.ballDirY *= -1;}
 }
 boolean ballAtRightEdge(){
-  return ballX - ballSize >= 1200;
+  return ballX - ballSize >= wWidth;
 }
 boolean ballAtLeftEdge(){
   return ballX + ballSize <= 0;
 }
 boolean ballAtBottomEdge(){
-  return ballY - ballSize >= 800;
+  return ballY - ballSize >= wHeight;
 }
 boolean ballAtTopEdge(){
   return ballY + ballSize <= 0;}
